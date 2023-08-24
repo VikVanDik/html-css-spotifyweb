@@ -76,6 +76,16 @@ aside {
   overflow: auto;
 }
 
+.bar {
+  width: 90%;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+.bottom-aside div img {
+  width: 15px;
+}
+
 /* FINE ASIDE */
 
 /* INIZIO ZONA CONTENUTI  */
@@ -126,3 +136,58 @@ aside {
 
 
 /* MEDIA QUERY */
+
+@media screen and (max-width: 500px) {
+  
+  aside {
+    width: 40px;
+  }
+
+  .content {
+    width: calc(100% - 40px);
+  }
+
+  .header {
+    width: calc(100% - 40px);
+  }
+
+  .logo-big {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+  
+  .logo-small {
+    display: block;
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+
+  .card {
+    width: calc(100% / 4);
+  }
+  
+  .card img {
+    max-width: 150px;
+    width: 95%;
+  }
+
+}
+
+
+@media screen and (max-width: 700px) {
+
+  .card {
+    width: calc(100% / 2);
+  }
+  
+  .card img {
+    max-width: 150px;
+    width: 95%;
+  }
+
+}
