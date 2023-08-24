@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.debug {
+  background-color: rgba(0, 80, 33, 0.5);
+  border: 1px solid black;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.main-wrapper {
+  height: 100vh;
+}
+
+.top {
+  height: calc(100% - 90px);
+}
+
+aside {
+  width: 225px;
+}
+
+.header {
+  width: calc(100% - 225px);
+  height: 90px;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.content {
+  width: calc(100% - 225px);
+  overflow: auto;
+}
+
+.bottom {
+  height: 90px;
+  justify-content: space-between;
+}
+
+.player {
+  width: 40%;
+}
