@@ -27,13 +27,28 @@
 
 .top {
   height: calc(100% - 90px);
+  overflow: hidden;
 }
 
 aside {
   width: 225px;
-  height: 100%;
+  min-height: 450px;
+  overflow: hidden;
 }
 
+.top-aside {
+  height: calc(100% - 80px);
+}
+
+.bottom-aside {
+  height: 80px;
+}
+
+
+.playlists {
+  height: 79%;
+  overflow: hidden;
+}
 
 .content {
   width: calc(100% - 225px);
@@ -45,10 +60,21 @@ aside {
   justify-content: space-between;
 }
 
+.profile {
+  
+}
+
 .player {
   width: 40%;
 }
 
 .list {
+  height: 100%;
+  overflow: hidden;
+}
+
+ul {
+  height: 76%;
   overflow: auto;
 }
+
