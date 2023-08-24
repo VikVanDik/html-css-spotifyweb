@@ -13,6 +13,10 @@
   display: flex;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
 .main-wrapper {
   height: 100vh;
 }
@@ -30,6 +34,8 @@
   overflow: hidden;
 }
 
+/* INIZIO ASIDE */
+
 aside {
   width: 225px;
   min-height: 450px;
@@ -44,28 +50,9 @@ aside {
   height: 80px;
 }
 
-
 .playlists {
   height: 79%;
   overflow: hidden;
-}
-
-.content {
-  width: calc(100% - 225px);
-  overflow: auto;
-}
-
-.bottom {
-  height: 90px;
-  justify-content: space-between;
-}
-
-.profile {
-  
-}
-
-.player {
-  width: 40%;
 }
 
 .list {
@@ -73,8 +60,40 @@ aside {
   overflow: hidden;
 }
 
-ul {
+.list ul {
   height: 76%;
   overflow: auto;
 }
+
+/* FINE ASIDE */
+
+/* INIZIO ZONA CONTENUTI  */
+
+.content {
+  width: calc(100% - 225px);
+  overflow: auto;
+  padding-top: 90px;
+}
+
+.navigator {
+  justify-content: center;
+}
+
+.navigator ul {
+  list-style-type: none;
+}
+
+.navigator ul li {
+  padding: 0 5px;
+}
+
+.bottom {
+  height: 90px;
+  justify-content: space-between;
+}
+
+.player {
+  width: 40%;
+}
+
 
