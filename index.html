@@ -6,6 +6,9 @@
   <title>Spotify</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous"/>
   <link rel="stylesheet" href="./style/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="main-wrapper black">
@@ -24,59 +27,67 @@
 
           <div class="nav black">
             <div class="home">
-              <span><i class="fa-solid fa-house"></i></span>
-              <span class="desktop">Home</span>
+              <a href="">
+                <span><img src="./img/home.svg" alt=""></span>
+                <span class="desktop">Home</span>
+              </a>
             </div>
             <div class="search">
-              <span><i class="fa-solid fa-magnifying-glass"></i></span>
-              <span class="desktop">Cerca</span>
+              <a href="">
+                <img src="./img/search.svg" alt="">
+                <span class="desktop">Cerca</span>
+              </a>
             </div>
             <div class="library">
-              <span><i class="fa-solid fa-magnifying-glass"></i></span>
-              <span class="desktop">La tua Libreria</span>
+              <a href="">
+                <span><img src="./img/libreria.svg" alt=""></span>
+                <span class="desktop">La tua Libreria</span>
+              </a>
             </div>
           </div>
           <div class="playlists desktop black">
-              <div>
+              <div class="play">
                 PLAYLIST
               </div>
               <div class="create d-flex">
-                <div class="plus"><i class="fa-solid fa-plus"></i></div>
-                <div>Crea Playlist</div>
+                <a href="" class="d-flex">
+                  <div class="plus"><i class="fa-solid fa-plus"></i></div>
+                  <div>Crea Playlist</div>
+                </a>
               </div>
               <div class="list">
                 <ul>
-                  <li>play</li>
-                  <li>play</li>
-                  <li>play</li>
-                  <li>play</li>
-                  <li>play</li>
-                  <li>play</li>
-                  <li>play</li>
-                  <li>play</li>
-                  <li>play</li>
-                  <li>play</li>
-                </ul>
+                  <li><a href="">Nome Playlist</a></li>
+                  <li><a href="">Nome Playlist</a></li>
+                  <li><a href="">Nome Playlist</a></li>
+                  <li><a href="">Nome Playlist</a></li>
+                  <li><a href="">Nome Playlist</a></li>
+                  <li><a href="">Nome Playlist</a></li>
+                  <li><a href="">Nome Playlist</a></li>
+                  <li><a href="">Nome Playlist</a></li>
+                  <li><a href="">Nome Playlist</a></li>
+                </ul>    
               </div>
           </div>
         </div>
         <div class="bottom-aside">
             <div class="profile black">
-              <div>
-                <span><i class="fa-regular fa-circle-down"></i></span>
-                <span class="desktop">Installa app</span>
+              <div class="br">
+                <a href="">
+                  <span><i class="fa-regular fa-circle-down"></i></span>
+                  <span class="desktop">Installa app</span>
+                </a>
               </div>
-              <div class="bar desktop"></div>
-              <div>
-                <span>
-                  <img src="./img/profile.svg" alt="">
-                </span>
-                <span class="desktop">John Doe</span>
-
+              <div class="propic">
+                  <a href="">
+                  <span>
+                    <img src="./img/profile.svg" alt="">
+                  </span>
+                  <span class="desktop">John Doe</span>
+                </a>
               </div>
             </div>         
-        </div>
-  
+          </div>
       </aside>
       <div class="content gray">
         <div class="navigator d-flex">
