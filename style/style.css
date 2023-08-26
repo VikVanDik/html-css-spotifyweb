@@ -234,7 +234,6 @@ aside {
   border-radius: 50%;
 }
 
-
 /* FINE ZONA CONTENUTI */
 
 /* INIZIO FOOTER  */
@@ -274,6 +273,42 @@ aside {
 
 .bottom .current .d-flex i {
   padding-right: 10px;
+}
+
+.player .buttons i {
+  color: white;
+  font-size: .8rem;
+}
+
+.player .buttons .fa-circle-play {
+  font-size: 1.3rem;
+}
+
+.player .buttons {
+  width: 200px;
+  margin: 0 auto;
+  padding-top: 10px;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 20px;
+}
+
+.player {
+  width: 70%;
+  margin: 0 auto;
+  align-items: baseline;
+}
+
+.play-bar {
+  width: 100%;
+  background-color: #717171;
+  margin: 0 20px;
+  border-radius: 20px;
+  height: 4px;
+}
+
+.minute {
+  font-size: 10px;
 }
 
 /* MEDIA QUERY */
