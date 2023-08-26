@@ -95,6 +95,19 @@ body {
   padding-bottom: 10px;
 }
 
+.home a:hover,
+.search a:hover,
+.library a:hover {
+  color: white;
+}
+
+.home a:hover img,
+.search a:hover img,
+.library a:hover img {
+  filter: opacity(1);
+}
+
+
 .play {
   color: white;
   padding-top: 15px;
@@ -105,6 +118,14 @@ body {
   line-height: 40px;
   font-size: .9rem;
   padding-left: 10px;
+}
+
+.create a:hover {
+  color: white;
+}
+
+.create a:hover .plus {
+  background-color: white;
 }
 
 .plus {
@@ -153,6 +174,10 @@ aside {
   padding-bottom: 10px;
 }
 
+.list ul li a:hover {
+  color: white;
+}
+
 .bar {
   width: 90%;
   border: 1px solid white;
@@ -170,6 +195,10 @@ aside {
 
 .br {
   border-bottom: 1px solid white;
+}
+
+.br a:hover {
+  color: white;
 }
 
 .profile {
@@ -222,12 +251,13 @@ aside {
 }
 
 .card {
-  width: calc(100% / 6);
+  width: calc(100% / 6 - 20px);
 }
 
 .card img {
   max-width: 150px;
   width: 90%;
+  margin-right: 20px;
 }
 
 .popular-artist .card img {
@@ -277,11 +307,18 @@ aside {
 
 .player .buttons i {
   color: white;
-  font-size: .8rem;
+  font-size: 1rem;
+  transition: 0.5s;
+}
+
+.player .buttons i:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+ 
 }
 
 .player .buttons .fa-circle-play {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .player .buttons {
@@ -307,8 +344,84 @@ aside {
   height: 4px;
 }
 
+.reach {
+  width: 5%;
+  background-color: white;
+  height: 4px;
+  border-radius: 20px;
+  position: absolute;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.play-bar:hover {
+  cursor: pointer;
+}
+
+.play-bar:hover .ball {
+  display: inline-block;
+}
+
+.play-bar:hover .reach {
+  background-color: green;
+}
+
+
+.ball {
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid black;
+  display: none;
+}
+
 .minute {
   font-size: 10px;
+}
+
+.volume {
+  align-items: center;
+}
+
+.volume i {
+  padding: 0 10px;
+  color: white;
+  font-size: .8rem;
+}
+
+.volume-bar {
+  width: 80px;
+  background-color:#717171;
+  height: 3px;
+  margin-right: 10px;
+}
+
+.volume-bar:hover .ball-volume {
+  display: inline-block;
+}
+
+.volume-bar:hover {
+  cursor: pointer;
+}
+
+.reach-volume {
+  width: 2%;
+  background-color: white;
+  height: 4px;
+  border-radius: 20px;
+  position: absolute;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.ball-volume {
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid black;
+  display: none;
 }
 
 /* MEDIA QUERY */
