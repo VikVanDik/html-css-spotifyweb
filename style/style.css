@@ -238,6 +238,31 @@ aside {
   padding-left: 20px;
 }
 
+.content h3 {
+  color: white;
+  padding: 15px 0;
+}
+
+.content .recent h3 {
+  color: white;
+  padding: 20px 0;
+}
+
+.content h5 {
+  padding-bottom: 30px;
+}
+
+.content .card .title {
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.content .card .artist {
+  font-size: .7rem;
+  text-align: center;
+}
+
 .navigator {
   justify-content: center;
 }
@@ -253,13 +278,38 @@ aside {
 
 .card {
   width: calc(100% / 6 - 20px);
-  margin-right: 20px
+  margin-right: 20px;
+  position: relative;
+}
+
+.img-song {
+  position: relative;
+}
+
+.img-song:hover img {
+  opacity: .3;
+}
+
+.img-song:hover i {
+  display: inline-block;
+}
+
+.img-song:hover {
+  cursor: pointer;
+}
+
+.card i {
+  position: absolute;
+  top: calc(50% - 30px);
+  right: calc(50% - 30px);
+  font-size: 60px;
+  color: white;
+  display: none;
 }
 
 .card img {
   max-width: 200px;
   width: 100%;
- ;
 }
 
 .popular-artist .card img {
