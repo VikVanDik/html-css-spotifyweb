@@ -235,6 +235,7 @@ aside {
   width: calc(100% - 225px);
   overflow-y: auto;
   padding-top: 90px;
+  padding-left: 20px;
 }
 
 .navigator {
@@ -252,12 +253,13 @@ aside {
 
 .card {
   width: calc(100% / 6 - 20px);
+  margin-right: 20px
 }
 
 .card img {
-  max-width: 150px;
-  width: 90%;
-  margin-right: 20px;
+  max-width: 200px;
+  width: 100%;
+ ;
 }
 
 .popular-artist .card img {
@@ -457,7 +459,8 @@ aside {
 @media screen and (max-width: 1000px) {
 
   .card {
-    width: calc(100% / 4);
+    width: calc(100% / 4 - 20px);
+    margin-right: 20px;
   }
   
   .card img {
@@ -471,7 +474,8 @@ aside {
 @media screen and (max-width: 700px) {
 
   .card {
-    width: calc(100% / 2);
+    width: calc(100% / 2 - 20px);
+    margin-right: 20px
   }
   
   .card img {
