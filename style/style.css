@@ -180,12 +180,17 @@ aside {
   padding-top: 15px;
 }
 
-.propic span img {
-  background-color: gray;
-  padding: 3px;
-  border-radius: 50%;
-  vertical-align: middle;
+.propic .img-profile {
+  height: 20px;
   width: 20px;
+  background-color: #717171;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.propic .img-profile img {
+  padding-left: 5px;
+  padding-top: 3px;
 }
 
 .propic .desktop {
@@ -229,6 +234,11 @@ aside {
   border-radius: 50%;
 }
 
+
+/* FINE ZONA CONTENUTI */
+
+/* INIZIO FOOTER  */
+
 .bottom {
   height: 90px;
   justify-content: space-between;
@@ -238,9 +248,33 @@ aside {
   width: 40%;
 }
 
+.bottom .current img {
+  width: 40px;
+}
 
+.bottom .current .d-flex {
+  align-items: center;
+  padding-top: 25px;
+  padding-left: 10px;
+}
 
+.bottom .current .d-flex .song {
+  padding-left: 10px;
+  padding-right: 40px;
+}
 
+.bottom .current .d-flex .song .artist {
+  font-size: .7rem;
+  color: white;
+}
+
+.bottom .current .d-flex .song .song-name {
+  font-size: .6rem;
+}
+
+.bottom .current .d-flex i {
+  padding-right: 10px;
+}
 
 /* MEDIA QUERY */
 
