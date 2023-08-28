@@ -110,7 +110,7 @@ aside {
   padding-left: 20px;
 }
 
-.active {
+.top-aside .nav .active {
   border-left: 2px solid greenyellow;
   filter: opacity(1);
   color: white;
@@ -135,8 +135,6 @@ aside {
   padding-left: 0;
 }
 
-
-
 .home a:hover,
 .search a:hover,
 .library a:hover {
@@ -149,7 +147,6 @@ aside {
 .library a:hover img {
   filter: opacity(1);
 }
-
 
 .play {
   color: white;
@@ -178,7 +175,6 @@ aside {
   font-size: 1.2rem;
   font-weight: 900;
 }
-
 
 .playlists {
   height: calc(100% - 200px);
@@ -288,6 +284,20 @@ aside {
 .content .card .artist {
   font-size: .7rem;
   text-align: center;
+}
+
+.content .navigator ul .active {
+  position: relative;
+  color: white;
+}
+
+.content .navigator ul .active::after {
+  content: "____";
+  color: greenyellow;
+  display: block;
+  position: absolute;
+  left: calc(50% - 17px);
+  top: 30%;
 }
 
 .navigator {
