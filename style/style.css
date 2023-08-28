@@ -288,7 +288,6 @@ aside {
 
 .content .navigator ul .active {
   position: relative;
-  color: white;
 }
 
 .content .navigator ul .active::after {
@@ -397,6 +396,11 @@ aside {
 
 .bottom .current .d-flex .song .song-name {
   font-size: .6rem;
+}
+
+.bottom .current .d-flex .song .song-name:hover {
+  text-decoration: underline;
+  color: white;
 }
 
 .bottom .current .d-flex i {
