@@ -58,6 +58,7 @@ body {
   top: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
 }
 
 .btn {
@@ -320,6 +321,10 @@ aside {
 
 /* INIZIO FOOTER  */
 
+.current, .volume {
+  width: 230px;
+}
+
 .bottom {
   height: 90px;
   justify-content: space-between;
@@ -340,8 +345,8 @@ aside {
 }
 
 .bottom .current .d-flex .song {
-  padding-left: 10px;
-  padding-right: 40px;
+  margin-left: 10px;
+  margin-right: 40px;
 }
 
 .bottom .current .d-flex .song .artist {
@@ -354,7 +359,12 @@ aside {
 }
 
 .bottom .current .d-flex i {
-  padding-right: 10px;
+  margin-right: 10px;
+}
+
+.bottom .current .d-flex i:hover {
+  color: white;
+  cursor: pointer;
 }
 
 .player .buttons i {
@@ -363,10 +373,13 @@ aside {
   transition: 0.5s;
 }
 
-.player .buttons i:hover {
+.player .buttons .fa-circle-play:hover {
   transform: scale(1.2);
   cursor: pointer;
- 
+}
+
+.player .buttons i:hover {
+  cursor: pointer;
 }
 
 .player .buttons .fa-circle-play {
@@ -374,7 +387,7 @@ aside {
 }
 
 .player .buttons {
-  width: 200px;
+  width: 150px;
   margin: 0 auto;
   padding-top: 10px;
   justify-content: space-between;
@@ -394,11 +407,12 @@ aside {
   margin: 0 20px;
   border-radius: 20px;
   height: 4px;
+  position: relative;
 }
 
 .reach {
-  width: 5%;
-  background-color: white;
+  width: 20%;
+  background-color: #C1C1C1;
   height: 4px;
   border-radius: 20px;
   position: absolute;
@@ -426,6 +440,7 @@ aside {
   border-radius: 50%;
   border: 1px solid black;
   display: none;
+  flex-shrink: 0;
 }
 
 .minute {
@@ -437,9 +452,10 @@ aside {
 }
 
 .volume i {
-  padding: 0 10px;
+  margin: 0 10px;
   color: white;
   font-size: .8rem;
+  cursor: pointer;
 }
 
 .volume-bar {
